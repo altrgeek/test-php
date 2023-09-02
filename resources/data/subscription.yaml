@@ -1,0 +1,10 @@
+features:
+    available:
+        - label: cogni-ai
+          description: Allow access to Cogni&trade; AI
+        - label: cogni-meet
+          description: Allow access to Cogni&trade; Meet
+        - label: cogni-xr
+          description: Allow access to Cogni&trade; XR
+        - label: chatting
+          description: Allow access to live chatting

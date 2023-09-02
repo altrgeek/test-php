@@ -1,0 +1,8 @@
+{
+    "en": { "name": "English", "flag": "english-sq" },
+    "fr": { "name": "French", "flag": "french-sq" },
+    "es": { "name": "Spanish", "flag": "spanish-sq" },
+    "pl": { "name": "Polish", "flag": "poland-sq" },
+    "nl": { "name": "Dutch", "flag": "germany-sq" },
+    "pt": { "name": "Portuguese", "flag": "portugal" }
+}

@@ -1,0 +1,151 @@
+.animate {
+    &-underline {
+        &,
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus {
+            position: relative;
+            text-decoration: none;
+            transition: all 0.1s ease;
+        }
+        &,
+        &:visited {
+            &:not(.no-decoration)::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                background-color: currentColor;
+                bottom: -1px;
+                display: block;
+                height: 1px;
+                width: 0;
+                transition: all 0.2s ease;
+            }
+        }
+        &:not(.no-active).active::before,
+        &:not(.no-active),
+        &.active,
+        &:hover::before,
+        &:active::before,
+        &:focus::before {
+            width: 100%;
+        }
+    }
+    &-ring {
+        position: relative;
+        &.focused::before,
+        &:not(.no-focus):hover::before {
+            @apply -inset-1;
+            border-color: var(--color-primary);
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            @apply inset-0;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+.zadeable {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 200ms ease-in-out;
+    &.opened,
+    &.toggled,
+    &.selected {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+    &-xl {
+        @include breakpoint(xl) {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 200ms ease-in-out;
+            &.opened,
+            &.toggled,
+            &.selected {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+    &-lg {
+        @include breakpoint {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 200ms ease-in-out;
+            &.opened,
+            &.toggled,
+            &.selected {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+    &-till-lg {
+        @include breakpoint-below(lg) {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 200ms ease-in-out;
+            &.opened,
+            &.toggled,
+            &.selected {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+    &-till-xl {
+        @include breakpoint-below(xl) {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 200ms ease-in-out;
+            &.opened,
+            &.toggled,
+            &.selected {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.fadeable {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    &.opened,
+    &.toggled,
+    &.selected {
+        visibility: visible;
+        opacity: 1;
+    }
+    &-xl {
+        @include breakpoint(xl) {
+            visibility: hidden;
+            opacity: 0;
+            transition: all 200ms ease-in-out;
+            &.opened,
+            &.toggled,
+            &.selected {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

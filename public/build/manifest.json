@@ -1,0 +1,48 @@
+{
+  "resources/ts/main.ts": {
+    "file": "assets/main.7f0f29c6.js",
+    "src": "resources/ts/main.ts",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers.b8add541.js"
+    ]
+  },
+  "resources/ts/index.tsx": {
+    "file": "assets/index.e7ce09ac.js",
+    "src": "resources/ts/index.tsx",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers.b8add541.js"
+    ],
+    "dynamicImports": [
+      "resources/ts/components/Chat/index.tsx",
+      "resources/ts/components/Meeting/index.tsx"
+    ]
+  },
+  "__commonjsHelpers.b8add541.js": {
+    "file": "assets/_commonjsHelpers.b8add541.js"
+  },
+  "resources/ts/components/Chat/index.tsx": {
+    "file": "assets/index.8f7c1ce8.js",
+    "src": "resources/ts/components/Chat/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/index.tsx",
+      "__commonjsHelpers.b8add541.js"
+    ]
+  },
+  "resources/ts/components/Meeting/index.tsx": {
+    "file": "assets/index.d78c4ac1.js",
+    "src": "resources/ts/components/Meeting/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "__commonjsHelpers.b8add541.js",
+      "resources/ts/index.tsx"
+    ]
+  },
+  "resources/css/tailwind.css": {
+    "file": "assets/tailwind.f90ac6d6.css",
+    "src": "resources/css/tailwind.css",
+    "isEntry": true
+  }
+}
